@@ -1,5 +1,5 @@
 <script>
-	// import '../tailwind.css'
+	import '../app.css'
 	import Header from '$lib/Header.svelte'
 </script>
 
@@ -9,4 +9,17 @@
 	<slot />
 </main>
 
-<footer>&copy; 2022</footer>
+<footer>&copy; Orange Cat Media 2022</footer>
+
+<style>
+	main,
+	footer {
+		width: min(100% - 2rem, 60rem);
+		margin-inline: auto;
+		text-align: center;
+	}
+
+	footer {
+		font-family: 'Fraunces', serif;
+	}
+</style>

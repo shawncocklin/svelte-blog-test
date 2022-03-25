@@ -11,7 +11,10 @@ const config = {
 		adapter: adapter()
 	},
 
-	preprocess: [sveltePreprocess(), mdsvex(mdsvexConfig)]
+	preprocess: [
+		sveltePreprocess(), 
+		mdsvex(mdsvexConfig)
+	]
 }
 
 export default config

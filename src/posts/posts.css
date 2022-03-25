@@ -1,0 +1,5 @@
+/* set up all blog post styles in posts.css and import into each markdown file. Not the most elegant solution, but it works */
+
+h1 {
+  font-family: 'Raleway';
+}

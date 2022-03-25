@@ -22,7 +22,7 @@
 </script>
 
 <div class="grid">
-	<div>
+	<div class="text-left">
 		<slot />
 	</div>
 	<aside>
@@ -39,5 +39,9 @@
 	.grid {
 		display: grid;
 		grid-template-columns: 3fr 1fr;
+	}
+
+	.text-left {
+		text-align: left;
 	}
 </style>
