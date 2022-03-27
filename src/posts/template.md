@@ -1,7 +1,8 @@
 ---
-title: Goodbye
-slug: goodbye
+title: Template
+slug: template
 ---
+
 <script>
   import Card from '../lib/Card.svelte'
   import './posts.css'

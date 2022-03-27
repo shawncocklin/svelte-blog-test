@@ -84,8 +84,9 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  background-color: #fafafa;
+  background-color: #423221;
   color: #222222;
+  font-family: 'Fraunces';
 }
 
 /* A elements that don't have a class get default styles */
@@ -122,4 +123,10 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+a {
+  color: #e4e4e4;
+  font-family: inherit;
+  text-decoration: none;
 }

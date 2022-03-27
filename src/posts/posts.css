@@ -2,4 +2,16 @@
 
 h1 {
   font-family: 'Raleway';
+
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #0a2e08;
+}
+
+.flow>*+* {
+  margin-top: 2em;
 }

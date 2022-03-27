@@ -26,7 +26,7 @@
 		<slot />
 	</div>
 	<aside>
-		<h5>Archive</h5>
+		<h3>Archive</h3>
 		<ul>
 			{#each posts as post}
 				<li><a href="{base}{post.slug}">{post.title}</a></li>
@@ -39,9 +39,19 @@
 	.grid {
 		display: grid;
 		grid-template-columns: 3fr 1fr;
+		gap: 5rem;
 	}
 
 	.text-left {
 		text-align: left;
+	}
+
+	li {
+		list-style: none;
+		text-align: left;
+	}
+
+	h3 {
+		color: #fafafa;
 	}
 </style>
