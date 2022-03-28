@@ -1,4 +1,7 @@
 <h1>Latest Sick Beat</h1>
-<article>
-	<h3>New Post</h3>
-</article>
+
+<style>
+	h1 {
+		color: #e4e4e4;
+	}
+</style>

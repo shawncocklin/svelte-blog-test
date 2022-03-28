@@ -8,9 +8,14 @@
 			return post.metadata
 		})
 
+		const Post = await import(`../../posts/${postsMeta[0].slug}.md`)
+
+		// console.log(Post)
+
 		return {
 			props: {
-				posts: postsMeta
+				posts: postsMeta,
+				Post: Post.default
 			}
 		}
 	}
@@ -18,12 +23,14 @@
 
 <script>
 	export let posts
+	export let Post
 	const base = '../../posts/'
 </script>
 
 <div class="grid">
 	<div class="text-left">
 		<slot />
+		<Post />
 	</div>
 	<aside>
 		<h3>Archive</h3>
