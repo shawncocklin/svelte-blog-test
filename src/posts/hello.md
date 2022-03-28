@@ -1,6 +1,8 @@
 ---
 title: Hello World
 slug: hello
+date: 'second'
+
 ---
 <script>
   import Card from '../lib/Card.svelte'

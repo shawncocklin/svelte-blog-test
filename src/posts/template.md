@@ -1,6 +1,7 @@
 ---
 title: Template
 slug: template
+date: 'first'
 ---
 
 <script>

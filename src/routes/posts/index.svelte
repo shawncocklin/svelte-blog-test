@@ -1,4 +1,4 @@
-<h1>Posts</h1>
+<h1>Latest Sick Beat</h1>
 <article>
 	<h3>New Post</h3>
 </article>

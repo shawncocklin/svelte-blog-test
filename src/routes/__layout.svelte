@@ -14,12 +14,19 @@
 <style>
 	main,
 	footer {
-		width: min(100% - 2rem, 60rem);
 		margin-inline: auto;
 		text-align: center;
 	}
 
+	main {
+		width: min(100% - 2rem, 60rem);
+	}
+
 	footer {
 		font-family: 'Fraunces', serif;
+		margin-top: 90%;
+		background-color: #e4e4e4;
+		color: #423221;
+		min-height: 5vh;
 	}
 </style>
