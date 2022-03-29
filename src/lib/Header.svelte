@@ -1,3 +1,7 @@
+<!-- <script>
+	import '../app.css'
+</script> -->
+
 <header>
 	<h1>Sick Beats</h1>
 	<nav>
@@ -18,6 +22,5 @@
 	h1 {
 		font-family: 'Raleway', sans-serif;
 		font-weight: 800;
-		color: #e4e4e4;
 	}
 </style>

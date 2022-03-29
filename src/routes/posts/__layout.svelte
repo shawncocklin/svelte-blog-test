@@ -8,7 +8,7 @@
 			return post.metadata
 		})
 
-		console.log(postsMeta)
+		// TODO: pull date value and compare to a new Date() object to reference the newest post
 		const date = postsMeta.map((post) => {
 			return post.date
 		})
@@ -16,12 +16,13 @@
 
 		const Post = await import(`../../posts/${postsMeta[index].slug}.md`)
 
-		// console.log(Post)
+		let showDefault = true
 
 		return {
 			props: {
 				posts: postsMeta,
-				Post: Post.default
+				Post: Post.default,
+				showDefault
 			}
 		}
 	}
@@ -30,19 +31,23 @@
 <script>
 	export let posts
 	export let Post
+	export let showDefault
 	const base = '../../posts/'
+	import '../../app.css'
 </script>
 
 <div class="grid">
 	<div class="text-left">
 		<slot />
-		<Post />
+		{#if showDefault}
+			<svelte:component this={Post} />
+		{/if}
 	</div>
 	<aside>
 		<h3>Archive</h3>
 		<ul>
 			{#each posts as post}
-				<li><a href="{base}{post.slug}">{post.title}</a></li>
+				<li><a href="{base}{post.slug}" on:click={() => (showDefault = false)}>{post.title}</a></li>
 			{/each}
 		</ul>
 	</aside>
@@ -65,6 +70,6 @@
 	}
 
 	h3 {
-		color: #fafafa;
+		color: #e4e4e4;
 	}
 </style>

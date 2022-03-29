@@ -85,8 +85,10 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: #423221;
-  color: #222222;
+  color: #e4e4e4;
   font-family: 'Fraunces';
+  position: relative;
+  padding-bottom: 10vh;
 }
 
 /* A elements that don't have a class get default styles */

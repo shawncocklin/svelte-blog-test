@@ -5,10 +5,7 @@ h1 {
 
 }
 
-h1,
-h2,
-h3,
-p {
+.text-color {
   color: #0a2e08;
 }
 
