@@ -8,7 +8,13 @@
 			return post.metadata
 		})
 
-		const Post = await import(`../../posts/${postsMeta[0].slug}.md`)
+		console.log(postsMeta)
+		const date = postsMeta.map((post) => {
+			return post.date
+		})
+		const index = date.indexOf('first')
+
+		const Post = await import(`../../posts/${postsMeta[index].slug}.md`)
 
 		// console.log(Post)
 
