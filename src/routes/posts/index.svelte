@@ -1,5 +1,5 @@
 <script context="module">
-	// load all posts
+	// load frontmatter for all posts
 	export async function load() {
 		// returns an object of every file of the type on that filepath
 		const posts = import.meta.globEager('../../posts/*.md')
@@ -10,10 +10,11 @@
 		})
 
 		// load default post to render on posts page load
-		// TODO: pull date value and compare to a new Date() object to reference the newest post
+		// TODO: pull date value and compare to a new Date() object to reference the newest post. look into date-fns for this
 		const date = postsMeta.map((post) => {
 			return post.date
 		})
+
 		const index = date.indexOf('first')
 
 		const Post = await import(`../../posts/${postsMeta[index].slug}.md`)

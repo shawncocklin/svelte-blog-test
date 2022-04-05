@@ -9,19 +9,9 @@
 			return post.metadata
 		})
 
-		// load default post to render on posts page load
-		// TODO: pull date value and compare to a new Date() object to reference the newest post
-		const date = postsMeta.map((post) => {
-			return post.date
-		})
-		const index = date.indexOf('first')
-
-		const Post = await import(`../../posts/${postsMeta[index].slug}.md`)
-
 		return {
 			props: {
-				posts: postsMeta,
-				DefaultPost: Post.default
+				posts: postsMeta
 			}
 		}
 	}
