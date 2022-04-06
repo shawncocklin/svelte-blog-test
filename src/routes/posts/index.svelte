@@ -1,4 +1,11 @@
 <script context="module">
+	// import dayjs from 'dayjs'
+	// import customParseFormat from 'dayjs/plugin/customParseFormat'
+	// import minMax from 'dayjs/plugin/minMax'
+
+	// dayjs.extend(customParseFormat)
+	// dayjs.extend(minMax)
+
 	// load frontmatter for all posts
 	export async function load() {
 		// returns an object of every file of the type on that filepath
@@ -10,14 +17,17 @@
 		})
 
 		// load default post to render on posts page load
-		// TODO: pull date value and compare to a new Date() object to reference the newest post. look into date-fns for this
+		// TODO: install dayjs to see if this works
 		const date = postsMeta.map((post) => {
 			return post.date
 		})
 
-		const index = date.indexOf('first')
+		// // returns the most recent date of the given parameters
+		// const newest = dayjs.max(...date)
 
-		const Post = await import(`../../posts/${postsMeta[index].slug}.md`)
+		const index = date.indexOf('first') // remember to remove this
+
+		const Post = await import(`../../posts/${postsMeta[index].slug}.md`) // remember to change index to newest
 
 		return {
 			props: {
