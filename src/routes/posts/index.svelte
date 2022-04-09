@@ -17,27 +17,14 @@
 		})
 
 		// load default post to render on posts page load
-
-		// TODO: figure out why the index search is targeting the unsorted array
-		const date = postsMeta.map((post) => {
-			return post.date
-		})
-		console.log(date)
-
-		const newest = date.sort((a, b) => {
-			const c = new Date(a).getTime()
-			const d = new Date(b).getTime()
+		const newest = postsMeta.sort((a, b) => {
+			const c = new Date(a.date).getTime()
+			const d = new Date(b.date).getTime()
 
 			return d - c
 		})
 
-		console.log(newest)
-
-		const index = newest.indexOf(newest[2]) // remember to remove this
-		console.log(index)
-
-		const Post = await import(`../../posts/${postsMeta[index].slug}.md`) // remember to change index to newest
-
+		const Post = await import(`../../posts/${postsMeta[0].slug}.md`)
 		return {
 			props: {
 				DefaultPost: Post.default
