@@ -21,11 +21,19 @@
 		const date = postsMeta.map((post) => {
 			return post.date
 		})
+		console.log(date)
 
-		// // returns the most recent date of the given parameters
-		// const newest = dayjs.max(...date)
+		const newest = date.sort((a, b) => {
+			const c = new Date(a).getTime()
+			const d = new Date(b).getTime()
 
-		const index = date.indexOf('first') // remember to remove this
+			return d - c
+		})
+
+		console.log(newest)
+
+		const index = newest.indexOf(newest[2]) // remember to remove this
+		console.log(index)
 
 		const Post = await import(`../../posts/${postsMeta[index].slug}.md`) // remember to change index to newest
 

@@ -1,7 +1,7 @@
 ---
 title: Goodbye
 slug: goodbye
-date: 'third'
+date: '03/31/2022'
 
 ---
 <script>

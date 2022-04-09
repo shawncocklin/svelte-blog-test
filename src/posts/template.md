@@ -1,7 +1,7 @@
 ---
 title: Template
 slug: template
-date: 'first'
+date: '04/04/2022'
 ---
 
 <script>

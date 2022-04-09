@@ -1,7 +1,7 @@
 ---
 title: Hello World
 slug: hello
-date: 'second'
+date: '04/01/2022'
 
 ---
 <script>
