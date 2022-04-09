@@ -17,7 +17,8 @@
 		})
 
 		// load default post to render on posts page load
-		// TODO: install dayjs to see if this works
+
+		// TODO: figure out why the index search is targeting the unsorted array
 		const date = postsMeta.map((post) => {
 			return post.date
 		})
