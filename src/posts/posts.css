@@ -1,4 +1,10 @@
 /* set up all blog post styles in posts.css and import into each markdown file. Not the most elegant solution, but it works */
+/* h1,
+h2,
+h3 {
+  margin: 0;
+} */
+
 
 h1 {
   font-family: 'Raleway';
@@ -6,9 +12,13 @@ h1 {
 }
 
 .text-color {
-  color: #0a2e08;
+  color: hsl(310, 35%, 10%);
 }
 
 .flow>*+* {
   margin-top: 2em;
+}
+
+Card > p {
+  color: red;
 }
