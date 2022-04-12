@@ -25,7 +25,7 @@
 	footer {
 		font-family: 'Fraunces', serif;
 		background-color: #e4e4e4;
-		color: #423221;
+		color: hsl(310, 35%, 10%);
 		min-height: 5vh;
 		width: 100%;
 		position: absolute;

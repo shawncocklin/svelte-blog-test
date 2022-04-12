@@ -23,6 +23,9 @@
 	import '../../app.css'
 </script>
 
+<!-- TODO: change archive aside into a separate component -->
+<!-- TODO: possibly hide archive behind a button to pull it onto screen only when needed -->
+
 <div class="grid">
 	<div class="text-left">
 		<slot />

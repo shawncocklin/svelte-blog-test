@@ -1,3 +1,6 @@
+<!-- TODO: add some kind of visual decoration to separate header from rest of page -->
+<!-- TODO: maybe try to get link animation to NOT snap back when no onger hovering -->
+
 <header>
 	<h1>Sick Beats</h1>
 	<nav>
@@ -18,13 +21,23 @@
 	h1 {
 		font-family: 'Raleway', sans-serif;
 		font-weight: 800;
-		font-size: 5rem;
+		font-size: clamp(5rem, 7.1vw + 3.6rem, 8rem);
 		line-height: 1;
-		margin-bottom: 0.5em;
+		margin-bottom: 0.25em;
+	}
+
+	nav {
+		display: flex;
+		justify-content: center;
 	}
 
 	a {
 		position: relative;
+		font-size: clamp(1.125rem, 0.9vw + 0.9rem, 1.5rem);
+	}
+
+	a:nth-of-type(2) {
+		margin-inline: 2rem;
 	}
 
 	a:hover:after,

@@ -1,11 +1,4 @@
 <script context="module">
-	// import dayjs from 'dayjs'
-	// import customParseFormat from 'dayjs/plugin/customParseFormat'
-	// import minMax from 'dayjs/plugin/minMax'
-
-	// dayjs.extend(customParseFormat)
-	// dayjs.extend(minMax)
-
 	// load frontmatter for all posts
 	export async function load() {
 		// returns an object of every file of the type on that filepath
